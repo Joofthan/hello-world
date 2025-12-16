@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="primefaces">
+<h:head>
+</h:head>
+<h:body>
+    <p:selectOneMenu id="option" value="#{selectOneMenuView.selectedOption}">
+        <f:selectItem itemLabel="Select One" itemValue=""/>
+        <f:selectItem itemLabel="Option1" itemValue="Option1"/>
+        <f:selectItem itemLabel="Option2" itemValue="Option2"/>
+        <f:facet name="footer">
+            <p:divider styleClass="mt-0" />
+            <h:outputText value="3 options" style="font-weight:bold;"/>
+        </f:facet>
+    </p:selectOneMenu>
+</h:body>
+</html>
